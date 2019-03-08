@@ -1,0 +1,273 @@
+/* General common rules */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    /* Aux border */
+    /* border: 0.1px solid pink; */
+}
+
+html{
+    font-size: 14px;
+}
+
+body {
+    /* font-size: 14px; */
+    font-family: 'open sans';
+    color: #54585a;
+}
+/* HEADER */
+    .main-header{  
+        height: 421px;
+        background: url("../images/hero02.jpg") center center no-repeat;
+        /* background: url("../images/hero.jpg") center center no-repeat; */
+
+        background-size: cover;
+        position: relative;
+    }
+
+    .main-title-container{
+        background-color: rgba(9, 157, 141,0.95);
+        height: 60px;
+    }
+
+    .main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 1.143rem;
+        font-weight: 500;
+        color: #fff;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .main-menu{
+        height: 45px;
+        background-color: rgba(19, 214, 195, 0.95);
+    }
+
+    .main-menu-list{
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-menu-item{
+        font-size: 1.071rem;
+        font-weight: 500;
+        color: #fff;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .main-claim-big-container{
+        width: 100%;
+        background-color: transparent;
+        padding: 0 15px 0 15px;
+        position: absolute;
+        bottom:-40px;
+    }
+
+    .main-claim-container{
+        height:80px;
+        background-color: #fff;
+
+    }
+
+    .main-claim{
+        font-size: 1.286rem;
+        line-height: 25px;
+        font-weight: 500;
+        color: #000;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    }
+
+
+/* MAIN - first section */
+    .padding-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+
+    .bgcolor {
+        background-color: rgba(184,184,185,0.2);
+    }
+
+    .title-section { 
+        color: aqua;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "rubik",sans-serif;
+        }
+
+    .description{
+        text-align: center;
+    }
+
+    .title-list-description {
+        color: #099d8d;
+
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-team {
+        list-style-type: none;
+        text-align: center;
+
+        padding-left: 0px;
+        padding-bottom: 15px; 
+    }
+
+    .title-type {
+        font-family: "rubik",sans-serif;
+    }
+
+    #weakness {
+        margin-top: 30px;
+    }
+
+    .triangle {
+        margin: auto;
+        width: 30px;
+        height: 30px;
+
+        background-color: #ffffff;
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -15px) rotate(45deg);
+    }
+
+/* MAIN - second section */
+
+.title-names {
+    font-size: 20px;
+    color:black;
+    font-weight: 400;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    }
+
+.profile-photo img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 4px;
+    border: 5px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* social media items*/
+
+.social-media-container{
+    height: 30px;
+    width: 124px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.social-media-item{
+    height: 100%; 
+    color: #099d8d; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    }
+
+.dot {
+    background-color:#099d8d; 
+    border-radius: 50%;
+    color:#099d8d;
+    width: 2px;
+    height: 2px;
+}
+
+
+
+/* FOOTER */
+   
+    .main-footer {
+        text-align: center;
+        padding: 30px;
+        /* Top grey line separating the footer from the rest of the website */  
+        border-top: 1px solid #b8b8b9;
+    }
+
+    .main-footer-copyright {
+        margin-top: 100px;
+        color: #b8b8b9;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem; 
+    }
+
+    .main-footer-menu {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        color: #54585a;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    
+        opacity: 0.75;
+        text-transform: uppercase;
+    }
+
+    .main-footer-menu-list {
+        list-style: none;
+    }
+
+    .main-footer-logo-container {
+        width: 115.9px;
+        /* Centering the div conteining the image */
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #main-footer-logo {
+        width: 100%;
+    }
