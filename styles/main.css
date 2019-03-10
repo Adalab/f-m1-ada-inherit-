@@ -1,3 +1,8 @@
+    /* Giving a separation between to all texts to improve readibility */
+    .description, .names p{
+        margin-bottom: 10px;
+    }
+
 /* General common rules */
 * {
     box-sizing: border-box;
@@ -24,14 +29,14 @@ body {
         /* Just for desktop version, to be implemented on responsive */
         /* height: 550px; */
 
-        /* this is working fine for responsive! */
-        /* background: url("../images/hero-resizing-mobil-60-v2c.jpg") center center no-repeat; */
+        /* hero01 */
+        background: url("../images/hero-resizing-mobil-60-v2c.jpg") center center no-repeat;
 
-        /* this is working fine for responsive! */
+        /* hero02*/
         /* background: url("../images/hero02-modif-60-v2c.jpg") center center no-repeat; */
 
-        /* this is working fine for responsive! */
-        background: url("../images/hero03-modif-60-v1c.jpg") center center no-repeat;
+        /* hero03 */
+        /* background: url("../images/hero03-modif-60-v1c.jpg") center center no-repeat; */
 
         background-size: cover;
         position: relative;
