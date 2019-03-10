@@ -21,9 +21,6 @@ body {
 /* HEADER */
     .main-header{  
         height: 421px;
-        
-        /* Just for desktop version, to be implemented on responsive */
-        /* height: 550px; */
 
         /* hero01 */
         background: url("../images/hero-resizing-mobil-60-v2c.jpg") center center no-repeat;
@@ -54,6 +51,7 @@ body {
         font-weight: 500;
         color: #fff;
         font-family: 'Rubik', sans-serif;
+        font-weight: 500;
     }
 
     .main-menu{
@@ -95,9 +93,9 @@ body {
     }
 
     .main-claim{
-        font-size: 1.286rem;
+        font-size: 1.2rem;
         line-height: 25px;
-        font-weight: 500;
+        font-weight: 600;
         color: #000;
         font-family: 'Open Sans', sans-serif;
         display: flex;
@@ -134,7 +132,8 @@ body {
         text-align: center;
         text-transform: uppercase;
         font-family: "rubik",sans-serif;
-        }
+        margin: 0 0 15px 0;
+    }
 
     .description{
         text-align: center;
@@ -178,7 +177,6 @@ body {
     }
 
 /* MAIN - second section */
-
 .title-names {
     font-size: 20px;
     color:black;
@@ -214,7 +212,6 @@ body {
 
 
 /* social media items*/
-
 .social-media-container{
     height: 30px;
     width: 124px;
@@ -252,11 +249,210 @@ a {
     text-decoration: none;
 }
 
+/* Giving a separation between to all paragraph texts on main section to improve readibility 
+*/
+
+.member-description, .description, .about-us-paragraph p {
+    margin-bottom: 6px;
+    }
+
    /*en version web
 
 .media-link:hover {
     background-color: #099d8d;
     color: white;
+
+
+/* About us section responsive - tablet */
+@media all and (min-width:768px){
+    .padding-section {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 60px;
+        padding-top: 45px;
+        /*revisar padding-top*/
+    }
+
+    .padding-section.bgcolor{
+        padding-top: 45px;
+    }
+
+    .description{
+        font-size: 1.143rem;
+        margin-top: 15px;
+    }
+
+    .title-list-description {
+        font-size: 1.571rem;
+    }
+    
+    .description-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom: 0px;
+    }
+
+    .about-us-paragraph{
+        font-size: 1.147rem;
+        width: 324px;
+    }
+
+    .title-type {
+        font-size: 1.714rem;
+    }
+    
+    #weakness {
+        margin-top: 0px;
+    }
+    /*second section - team */
+    .team-member {
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        padding:30px 0 30px 0;
+
+    }
+
+        .profile-photo {
+        padding: 0px;
+        width: 205px; 
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 30px 0 0;
+        }
+
+        .profile-photo img{
+            width: 205px;
+        }
+        .title-names {
+            margin: 0;
+            width: 442px;
+            padding: 0;
+            justify-content:flex-start;
+         }
+    
+       .social-media-container {
+        display: flex;
+        justify-content: flex-start;
+        margin:0;
+        }
+
+        .member-description {
+          text-align: left;
+          width: 412px;
+        }
+
+    .team-member-even{
+        display:flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+    }
+        
+    .team-member-even .profile-photo{
+        order:1;
+        justify-content:flex-end;
+        margin: 0 0 0 30px;
+    }
+    
+    .team-member-even .title-names{
+        justify-content: flex-end;
+    }
+
+    .team-member-even .member-description{
+        text-align: right;
+        display: flex;
+
+    }
+
+    .team-member-even .social-media{
+        display:flex;
+        justify-content: flex-end;
+    }
+    #last-member {
+        padding-bottom: 0;
+        height: 235px;
+    }
+
+}
+
+/* about us section responsive - desktop */
+@media all and (min-width:1200px){
+    .padding-section {
+
+        margin: auto;
+    }
+
+    .desktop-width{
+        max-width: 601px;
+        margin:0 auto;
+    }
+
+    .padding-section.bgcolor{
+        max-width: none;
+    }
+   
+    .about-us-paragraph{
+        width: 439px;
+    }
+
+    /*second section - team */
+    #title-us {
+        margin-bottom: 11px;
+    }
+
+    .team-member {
+        height: 338px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding:30px 0 30px 0;
+        max-width: 924px;
+        margin: 0 auto;
+    }
+
+        .profile-photo {
+        padding: 0px;
+        width: 278px; 
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 45px 0 0;
+        }
+
+        .profile-photo img{
+            width: 278px;
+        }
+        .team-member-even {
+            align-content: flex-end;
+        }
+        .team-member-even .profile-photo{
+            order:1;
+            justify-content:flex-end;
+            margin: 0 0 0 45px;
+        }
+
+        .member-description {
+            width: 440px;
+        }
+        #last-member {
+            padding-bottom: 0;
+            height: 308px;
+        }
+    }
+    
+
 
 
 /* FOOTER */
