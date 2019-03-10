@@ -89,7 +89,6 @@ body {
     .main-claim-container{
         height:80px;
         background-color: #fff;
-
     }
 
     .main-claim{
@@ -105,6 +104,81 @@ body {
         text-align: center;
     }
 
+/* HEADER RESPONSIVE */
+
+@media all and (min-width:768px) 
+{
+    .main-title-menu-container{
+        height: 60px;
+        display:flex;
+        background-color: rgba(9, 157, 141,0.95);
+        justify-content: space-between;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .main-title-container{
+        height:100%;
+        background-color: transparent;
+    }      
+
+    .main-menu{
+        background-color:transparent;
+        height:100%;
+    }      
+
+     .main-menu-list{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px;
+        padding-right: 0px;
+    }    
+
+    .main-menu-item{
+        margin-left: 20px;
+    }
+
+    .main-claim-big-container{
+        width: auto;
+        bottom:0px;
+        height: 80px;
+    }
+
+    .main-claim-container{
+       
+        opacity: 0.8;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom:15px;
+        margin-left: 46px;
+    }
+
+    .main-claim{
+        padding-top:0px;
+        padding-bottom:0px;
+        text-align: left;
+    }      
+}
+
+@media all and (min-width:1200px) {
+    .main-title-menu-container{
+        padding-left: 142px;
+        padding-right: 142px;
+    }
+
+    .main-claim-container{
+        opacity: 0.8;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom:15px;
+        margin-left: 138px;
+    }
+    .main-claim{
+        font-size: 1.714rem;
+    }
+}
 
 /* HEADER DESKTOP VERSION */
 @media all and (min-width:1200px) {
@@ -112,6 +186,7 @@ body {
         height: 550px;
     }
 }
+
 
 
 
@@ -354,7 +429,6 @@ a {
         display:flex;
         align-items: flex-end;
         justify-content: flex-start;
-
     }
         
     .team-member-even .profile-photo{
@@ -370,7 +444,6 @@ a {
     .team-member-even .member-description{
         text-align: right;
         display: flex;
-
     }
 
     .team-member-even .social-media{
@@ -381,13 +454,11 @@ a {
         padding-bottom: 0;
         height: 235px;
     }
-
 }
 
 /* about us section responsive - desktop */
 @media all and (min-width:1200px){
     .padding-section {
-
         margin: auto;
     }
 
@@ -579,5 +650,5 @@ a {
             margin-right: 0;
             margin-top: 24px;
             padding: 0;
-         }
+            }
     }
