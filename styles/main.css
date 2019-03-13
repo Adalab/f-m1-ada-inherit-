@@ -310,6 +310,10 @@ body {
     margin: 0 auto;
     }
 
+.media-link:hover{
+    color: #055850;
+}
+
 .dot {
     background-color:#099d8d; 
     border-radius: 50%;
