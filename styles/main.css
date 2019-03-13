@@ -540,14 +540,14 @@ a {
         border-top: 1px solid #b8b8b9;
     }
 
-    .main-footer-copyright {
+    .main-footer__copyright {
         margin-top: 100px;
         color: #b8b8b9;
         font-family: "Open Sans", sans-serif;
         font-size: 1rem; 
     }
 
-    .main-footer-menu {
+    .main-footer__menu {
         padding-top: 20px;
         padding-bottom: 30px;
         color: #54585a;
@@ -563,7 +563,7 @@ a {
         list-style: none;
     }
 
-    .main-footer-logo-container {
+    .main-footer__logo-container {
         width: 115.9px;
         /* Centering the div conteining the image */
         position: absolute;
@@ -591,7 +591,7 @@ a {
          margin-right: 0px;
          }
  
-         .main-footer-copyright {
+         .main-footer__copyright {
             width: 172px;
             height: 20px; 
             margin: 0;
@@ -607,7 +607,7 @@ a {
             padding: 0;
          }
 
-         .main-footer-logo-container {
+         .main-footer__logo-container {
             width: 115.9px;
             height: 45px;
             transform: translate(0, 0);
@@ -633,7 +633,7 @@ a {
             justify-content: flex-start;
             }
 
-            .main-footer-logo-container {
+            .main-footer__logo-container {
             height: 45px;  
              
             transform: translate(0, 0);
@@ -642,14 +642,14 @@ a {
             margin-left:138px;
             }
             
-            .main-footer-copyright {
+            .main-footer__copyright {
             height: 20px;
             margin-top: 30px;
             padding-top: 0;
             text-align: left; 
             }
 
-            .main-footer-menu {
+            .main-footer__menu {
             align-self: flex-end;
             margin-right: 0;
             margin-top: 24px;
