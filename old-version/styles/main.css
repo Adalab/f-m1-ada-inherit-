@@ -1,0 +1,658 @@
+/* General common rules */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    /* Aux border */
+    /* border: 0.1px solid pink; */
+}
+
+html{
+    font-size: 14px;
+}
+
+body {
+    /* font-size: 14px; */
+    font-family: 'open sans';
+    color: #54585a;
+}
+
+/* HEADER */
+    .main-header{  
+        height: 421px;
+
+        /* hero01 */
+        background: url("../images/hero-resizing-mobil-60-v2c.jpg") center center no-repeat;
+
+        /* hero02*/
+        /* background: url("../images/hero02-modif-60-v2c.jpg") center center no-repeat; */
+
+        /* hero03 */
+        /* background: url("../images/hero03-modif-60-v1c.jpg") center center no-repeat; */
+
+        background-size: cover;
+        position: relative;
+    }
+
+    .main-title-container{
+        background-color: rgba(9, 157, 141,0.95);
+        height: 60px;
+    }
+
+    .main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 1.143rem;
+        font-weight: 500;
+        color: #fff;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+    }
+
+    .main-menu{
+        height: 45px;
+        background-color: rgba(19, 214, 195, 0.95);
+    }
+
+    .main-menu-list{
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-menu-item{
+        font-size: 1.071rem;
+        font-weight: 500;
+        color: #fff;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .main-claim-big-container{
+        width: 100%;
+        background-color: transparent;
+        padding: 0 15px 0 15px;
+        position: absolute;
+        bottom:-40px;
+    }
+
+    .main-claim-container{
+        height:80px;
+        background-color: #fff;
+    }
+
+    .main-claim{
+        font-size: 1.2rem;
+        line-height: 25px;
+        font-weight: 600;
+        color: #000;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    }
+
+/* HEADER RESPONSIVE */
+
+@media all and (min-width:768px) 
+{
+    .main-title-menu-container{
+        height: 60px;
+        display:flex;
+        background-color: rgba(9, 157, 141,0.95);
+        justify-content: space-between;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .main-title-container{
+        height:100%;
+        background-color: transparent;
+    }      
+
+    .main-menu{
+        background-color:transparent;
+        height:100%;
+    }      
+
+     .main-menu-list{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px;
+        padding-right: 0px;
+    }    
+
+    .main-menu-item{
+        margin-left: 20px;
+    }
+
+    .main-claim-big-container{
+        width: auto;
+        bottom:0px;
+        height: 80px;
+    }
+
+    .main-claim-container{
+       
+        opacity: 0.8;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom:15px;
+        margin-left: 46px;
+    }
+
+    .main-claim{
+        padding-top:0px;
+        padding-bottom:0px;
+        text-align: left;
+    }      
+}
+
+@media all and (min-width:1200px) {
+    .main-title-menu-container{
+        padding-left: 142px;
+        padding-right: 142px;
+    }
+
+    .main-claim-container{
+        opacity: 0.8;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom:15px;
+        margin-left: 138px;
+    }
+    .main-claim{
+        font-size: 1.714rem;
+    }
+}
+
+/* HEADER DESKTOP VERSION */
+@media all and (min-width:1200px) {
+    .main-header{  
+        height: 550px;
+    }
+}
+
+
+
+
+/* MAIN - first section */
+    .padding-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+
+    .bgcolor {
+        background-color: rgba(184,184,185,0.2);
+    }
+
+    .title-section { 
+        color: aqua;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "rubik",sans-serif;
+        margin: 0 0 15px 0;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .title-list-description {
+        color: #099d8d;
+
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-team {
+        list-style-type: none;
+        text-align: center;
+
+        padding-left: 0px;
+        padding-bottom: 15px; 
+    }
+
+    .title-type {
+        font-family: "rubik",sans-serif;
+    }
+
+    #weakness {
+        margin-top: 30px;
+    }
+
+    .triangle {
+        margin: auto;
+        width: 30px;
+        height: 30px;
+
+        background-color: #ffffff;
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -15px) rotate(45deg);
+    }
+
+/* MAIN - second section */
+.title-names {
+    font-size: 20px;
+    color:black;
+    font-weight: 400;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    }
+
+.profile-photo img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 4px;
+    border: 5px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* social media items*/
+.social-media-container{
+    height: 30px;
+    width: 124px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.social-media-item{
+    height: 100%; 
+    color: #099d8d; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    }
+
+.media-link:hover{
+    color: #055850;
+}
+
+.dot {
+    background-color:#099d8d; 
+    border-radius: 50%;
+    color:#099d8d;
+    width: 2px;
+    height: 2px;
+}
+.media-link {
+    color: #099d8d;
+    }
+a {
+    text-decoration: none;
+}
+
+/* Giving a separation between to all paragraph texts on main section to improve readibility 
+*/
+
+.member-description, .description, .about-us-paragraph p {
+    margin-bottom: 6px;
+    }
+
+   /*en version web
+
+.media-link:hover {
+    background-color: #099d8d;
+    color: white;
+
+
+/* About us section responsive - tablet */
+@media all and (min-width:768px){
+    .padding-section {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 60px;
+        padding-top: 45px;
+        /*revisar padding-top*/
+    }
+
+    .padding-section.bgcolor{
+        padding-top: 45px;
+    }
+
+    .description{
+        font-size: 1.143rem;
+        margin-top: 15px;
+    }
+
+    .title-list-description {
+        font-size: 1.571rem;
+    }
+    
+    .description-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom: 0px;
+    }
+
+    .about-us-paragraph{
+        font-size: 1.147rem;
+        width: 324px;
+    }
+
+    .title-type {
+        font-size: 1.714rem;
+    }
+    
+    #weakness {
+        margin-top: 0px;
+    }
+    /*second section - team */
+    .team-member {
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        padding:30px 0 30px 0;
+
+    }
+
+        .profile-photo {
+        padding: 0px;
+        width: 205px; 
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 30px 0 0;
+        }
+
+        .profile-photo img{
+            width: 205px;
+        }
+        .title-names {
+            margin: 0;
+            width: 442px;
+            padding: 0;
+            justify-content:flex-start;
+         }
+    
+       .social-media-container {
+        display: flex;
+        justify-content: flex-start;
+        margin:0;
+        }
+
+        .member-description {
+          text-align: left;
+          width: 412px;
+        }
+
+    .team-member-even{
+        display:flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+        
+    .team-member-even .profile-photo{
+        order:1;
+        justify-content:flex-end;
+        margin: 0 0 0 30px;
+    }
+    
+    .team-member-even .title-names{
+        justify-content: flex-end;
+    }
+
+    .team-member-even .member-description{
+        text-align: right;
+        display: flex;
+    }
+
+    .team-member-even .social-media{
+        display:flex;
+        justify-content: flex-end;
+    }
+    #last-member {
+        padding-bottom: 0;
+        height: 235px;
+    }
+}
+
+/* about us section responsive - desktop */
+@media all and (min-width:1200px){
+    .padding-section {
+        margin: auto;
+    }
+
+    .desktop-width{
+        max-width: 601px;
+        margin:0 auto;
+    }
+
+    .padding-section.bgcolor{
+        max-width: none;
+    }
+   
+    .about-us-paragraph{
+        width: 439px;
+    }
+
+    /*second section - team */
+    #title-us {
+        margin-bottom: 11px;
+    }
+
+    .team-member {
+        height: 338px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding:30px 0 30px 0;
+        max-width: 924px;
+        margin: 0 auto;
+    }
+
+        .profile-photo {
+        padding: 0px;
+        width: 278px; 
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 45px 0 0;
+        }
+
+        .profile-photo img{
+            width: 278px;
+        }
+        .team-member-even {
+            align-content: flex-end;
+        }
+        .team-member-even .profile-photo{
+            order:1;
+            justify-content:flex-end;
+            margin: 0 0 0 45px;
+        }
+
+        .member-description {
+            width: 440px;
+        }
+        #last-member {
+            padding-bottom: 0;
+            height: 308px;
+        }
+    }
+    
+
+
+
+/* FOOTER */
+   
+    .main-footer {
+        text-align: center;
+        padding: 30px;
+        padding-bottom: 100px;
+        /* Top grey line separating the footer from the rest of the website */  
+        border-top: 1px solid #b8b8b9;
+    }
+
+    .main-footer__copyright {
+        margin-top: 100px;
+        color: #b8b8b9;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem; 
+    }
+
+    .main-footer__menu {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        color: #54585a;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    
+        opacity: 0.75;
+        text-transform: uppercase;
+    }
+
+    .main-footer__menu-list {
+        list-style: none;
+    }
+
+    .main-footer__logo-container {
+        width: 115.9px;
+        /* Centering the div conteining the image */
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #main-footer-logo {
+        width: 100%;
+    }
+
+    /* FOOTER TABLET VERSION DEFINITIVA*/
+
+    @media all and (min-width:768px) {
+        .main-footer {
+         width: 100vw; /* HE PUESTO EL 100VW PORQUE SINO LA LINEA SE CORTA*/
+         height: 170px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between; 
+         align-items: flex-start;
+         padding-top: 30px;
+         padding-left: 45px;
+         padding-right: 45px;
+         margin-right: 0px;
+         }
+ 
+         .main-footer__copyright {
+            width: 172px;
+            height: 20px; 
+            margin: 0;
+            text-align: left;
+         }
+         
+         .main-footer-menu {
+            width: 324px;
+            height: 90px;
+            text-align: end;
+            line-height: 30px;
+            font-size: 1rem;
+            padding: 0;
+         }
+
+         .main-footer__logo-container {
+            width: 115.9px;
+            height: 45px;
+            transform: translate(0, 0);
+            left: 0;
+            margin-left: 45px;
+            margin-top: 35px;
+         }
+         
+     }
+     /* FOOTER DESKTOP VERSION*/
+ 
+     @media all and (min-width:1200px) {
+         .main-footer {
+            width: 100vw;
+            height: 161px;
+            margin: auto;
+            padding-left: 138px;
+            padding-right: 138px;
+            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            }
+
+            .main-footer__logo-container {
+            height: 45px;  
+             
+            transform: translate(0, 0);
+            left: 0;
+            margin-top: 65px;
+            margin-left:138px;
+            }
+            
+            .main-footer__copyright {
+            height: 20px;
+            margin-top: 30px;
+            padding-top: 0;
+            text-align: left; 
+            }
+
+            .main-footer__menu {
+            align-self: flex-end;
+            margin-right: 0;
+            margin-top: 24px;
+            padding: 0;
+            }
+    }
