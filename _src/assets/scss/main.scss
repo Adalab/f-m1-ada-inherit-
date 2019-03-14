@@ -258,7 +258,7 @@ body {
     }
 
 /* MAIN - second section */
-.title-names {
+.member-card__title {
     font-size: 20px;
     color:black;
     font-weight: 400;
@@ -268,7 +268,7 @@ body {
     align-items: center;
 }
 
-.profile-photo {
+.member-card__profile-photo {
     width: 180px;
     height: 180px;
     background-color: white;
@@ -282,7 +282,7 @@ body {
     margin-bottom: 15px;
     }
 
-.profile-photo img {
+.member-card__profile-photo img {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -337,7 +337,7 @@ a {
 /* Giving a separation between to all paragraph texts on main section to improve readibility 
 */
 
-.member-description, .description, .about-us-paragraph p {
+.member-card__description, .description, .about-us-paragraph p {
     margin-bottom: 6px;
     }
 
@@ -393,7 +393,7 @@ a {
         margin-top: 0px;
     }
     /*second section - team */
-    .team-member {
+    .team__member-card {
         height: 265px;
         display: flex;
         flex-direction: column;
@@ -401,10 +401,16 @@ a {
         justify-content: flex-start;
         align-content: center;
         padding:30px 0 30px 0;
-
+    }
+    .team__member-card--odd{
+        align-items: flex-start;
     }
 
-        .profile-photo {
+    .team__member-card--even{
+        align-items: flex-end;
+    }
+
+        .member-card__profile-photo {
         padding: 0px;
         width: 205px; 
         height: 100%;
@@ -414,10 +420,10 @@ a {
         margin: 0 30px 0 0;
         }
 
-        .profile-photo img{
+        .member-card__profile-photo img{
             width: 205px;
         }
-        .title-names {
+        .member-card__title {
             margin: 0;
             width: 442px;
             padding: 0;
@@ -430,33 +436,29 @@ a {
         margin:0;
         }
 
-        .member-description {
+        .member-card__description {
           text-align: left;
           width: 412px;
         }
 
-    .team-member-even{
-        display:flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
+
         
-    .team-member-even .profile-photo{
+    .team__member-card--even .member-card__profile-photo{
         order:1;
         justify-content:flex-end;
         margin: 0 0 0 30px;
     }
     
-    .team-member-even .title-names{
+    .team__member-card--even .member-card__title{
         justify-content: flex-end;
     }
 
-    .team-member-even .member-description{
+    .team__member-card--even .member-card__description{
         text-align: right;
         display: flex;
     }
 
-    .team-member-even .social-media{
+    .team__member-card--even .social-media{
         display:flex;
         justify-content: flex-end;
     }
@@ -490,7 +492,7 @@ a {
         margin-bottom: 11px;
     }
 
-    .team-member {
+    .team__member-card {
         height: 338px;
         display: flex;
         flex-direction: column;
@@ -502,7 +504,7 @@ a {
         margin: 0 auto;
     }
 
-        .profile-photo {
+        .member-card__profile-photo {
         padding: 0px;
         width: 278px; 
         height: 100%;
@@ -512,19 +514,19 @@ a {
         margin: 0 45px 0 0;
         }
 
-        .profile-photo img{
+        .member-card__profile-photo img{
             width: 278px;
         }
-        .team-member-even {
+        .team__member-card--even {
             align-content: flex-end;
         }
-        .team-member-even .profile-photo{
+        .team__member-card--even .member-card__profile-photo{
             order:1;
             justify-content:flex-end;
             margin: 0 0 0 45px;
         }
 
-        .member-description {
+        .member-card__description {
             width: 440px;
         }
         #last-member {
