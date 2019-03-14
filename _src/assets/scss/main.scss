@@ -16,7 +16,7 @@ body {
     /* font-size: 14px; */
     font-family: 'open sans';
     color: #54585a;
-    background-color: white;
+    background-color: $colorSecondary-0;
 }
 
 /* HEADER */
@@ -55,7 +55,7 @@ body {
         margin: 0;
         font-size: 1.143rem;
         font-weight: 500;
-        color: #fff;
+        color: $colorSecondary-0;
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
     }
@@ -80,7 +80,7 @@ body {
     .main-menu-item{
         font-size: 1.071rem;
         font-weight: 500;
-        color: #fff;
+        color: $colorSecondary-0;
         font-family: 'Rubik', sans-serif;
     }
 
@@ -94,7 +94,7 @@ body {
 
     .main-claim-container{
         height:80px;
-        background-color: #fff;
+        background-color: $colorSecondary-0;
     }
 
     .main-claim{
@@ -209,7 +209,7 @@ body {
     }
 
     .title-section { 
-        color: aqua;
+        color: $colorPrimary-400;
         text-align: center;
         text-transform: uppercase;
         font-family: "rubik",sans-serif;
@@ -250,7 +250,7 @@ body {
         width: 30px;
         height: 30px;
 
-        background-color: #ffffff;
+        background-color: $colorSecondary-0;
         z-index: 10;
         position: absolute;
         left: 50%;
@@ -271,7 +271,7 @@ body {
 .profile-photo {
     width: 180px;
     height: 180px;
-    background-color: white;
+    background-color: $colorSecondary-0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -345,7 +345,7 @@ a {
 
 .media-link:hover {
     background-color: #099d8d;
-    color: white;
+    color: $colorSecondary-0;
 
 
 /* About us section responsive - tablet */
