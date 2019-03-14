@@ -17,6 +17,7 @@ body {
     font-family: 'open sans';
     color: #54585a;
     background-color: white;
+    text-align: center;
 }
 
 /* HEADER */
@@ -216,10 +217,6 @@ body {
         margin: 0 0 15px 0;
     }
 
-    .description{
-        text-align: center;
-    }
-
     .title-list-description {
         color: #099d8d;
 
@@ -337,7 +334,7 @@ a {
 /* Giving a separation between to all paragraph texts on main section to improve readibility 
 */
 
-.member-card__description, .description, .about-us-paragraph p {
+.member-card__description, .about-us-paragraph p {
     margin-bottom: 6px;
     }
 
