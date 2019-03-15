@@ -198,14 +198,14 @@ body {
 
 
 /* MAIN - first section */
-    .padding-section {
+    .container {
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 30px;
         padding-top: 50px;
     }
 
-    .bgcolor {
+    .container--bgcolor {
         background-color: rgba(184,184,185,0.2);
     }
 
@@ -242,7 +242,7 @@ body {
         margin-top: 30px;
     }
 
-    .triangle {
+    .container__divider {
         margin: auto;
         width: 30px;
         height: 30px;
