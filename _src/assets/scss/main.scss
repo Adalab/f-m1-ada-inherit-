@@ -1,3 +1,30 @@
+// Core
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/variables';
+
+// Layout
+@import 'layout/header';
+@import 'layout/team';
+@import 'layout/about-us';
+@import 'layout/footer';
+
+
+// Components
+@import 'components/forms';
+
+
+// Pages
+@import 'pages/home';
+@import 'pages/contact';
+
+
+
+
+
+
+
+
 /* General common rules */
 * {
     box-sizing: border-box;
@@ -15,8 +42,8 @@ html{
 body {
     /* font-size: 14px; */
     font-family: 'open sans';
-    color: #54585a;
-    background-color: $colorSecondary-0;
+    color: $colorSecundary-700;
+    background-color: $colorSecundary-0;
 }
 
 /* HEADER */
@@ -37,7 +64,7 @@ body {
     }
 
     .main-title-container{
-        background-color: rgba(9, 157, 141,0.95);
+        background-color: rgba(9, 157, 141, 0.95);
         height: 60px;
     }
     .main-title-menu-container {
@@ -55,7 +82,7 @@ body {
         margin: 0;
         font-size: 1.143rem;
         font-weight: 500;
-        color: $colorSecondary-0;
+        color: $colorSecundary-0;
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
     }
@@ -80,7 +107,7 @@ body {
     .main-menu-item{
         font-size: 1.071rem;
         font-weight: 500;
-        color: $colorSecondary-0;
+        color: $colorSecundary-0;
         font-family: 'Rubik', sans-serif;
     }
 
@@ -94,14 +121,14 @@ body {
 
     .main-claim-container{
         height:80px;
-        background-color: $colorSecondary-0;
+        background-color: $colorSecundary-0;
     }
 
     .main-claim{
         font-size: 1.2rem;
         line-height: 25px;
         font-weight: 600;
-        color: #000;
+        color: $colorSecundary-1000;
         font-family: 'Open Sans', sans-serif;
         display: flex;
         justify-content: center;
@@ -205,7 +232,7 @@ body {
     }
 
     .bgcolor {
-        background-color: rgba(184,184,185,0.2);
+        background-color: $colorSecundary-400;
     }
 
     .title-section { 
@@ -221,7 +248,7 @@ body {
     }
 
     .title-list-description {
-        color: #099d8d;
+        color: $colorPrimary-700;
 
         height: 45px;
         display: flex;
@@ -250,7 +277,7 @@ body {
         width: 30px;
         height: 30px;
 
-        background-color: $colorSecondary-0;
+        background-color: $colorSecundary-0;
         z-index: 10;
         position: absolute;
         left: 50%;
@@ -260,7 +287,7 @@ body {
 /* MAIN - second section */
 .title-names {
     font-size: 20px;
-    color:black;
+    color:$colorSecundary-1000;
     font-weight: 400;
     height: 45px;
     display: flex;
@@ -271,7 +298,7 @@ body {
 .profile-photo {
     width: 180px;
     height: 180px;
-    background-color: $colorSecondary-0;
+    background-color: $colorSecundary-0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -288,7 +315,7 @@ body {
     justify-content: center;
 
     border-radius: 4px;
-    border: 5px solid rgba(0, 0, 0, 0.08);
+    border: 5px solid $colorSecundary-400;
 }
 
 
@@ -345,7 +372,7 @@ a {
 
 .media-link:hover {
     background-color: #099d8d;
-    color: $colorSecondary-0;
+    color: $colorSecundary-0;
 
 
 /* About us section responsive - tablet */
@@ -556,7 +583,7 @@ a {
     .main-footer__menu {
         padding-top: 20px;
         padding-bottom: 30px;
-        color: #54585a;
+        color: $colorSecundary-700;
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 1rem;
