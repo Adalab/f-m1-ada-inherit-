@@ -1,0 +1,79 @@
+body {
+    width: 100%;
+}
+
+.main-claim-container__hidden {
+    display: none;
+}
+
+.contact__description {
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+
+.contact__title {
+        color: #099d8d;
+        font-weight: 500;
+        font-family: $fontSecundary;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 15px;
+}
+
+
+.contact__text {
+       
+        text-align: center;
+        margin-top: 0px;
+       line-height: 1.5;
+    }
+ .contact-text__container  {
+     width: 290px;
+     height: 210px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     margin: auto;
+ }
+
+ .marker {
+     color: $colorPrimary-400;
+ }
+
+
+ .data__item {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-bottom: 13px;
+
+     .information {
+         @include dataBox;     
+     }
+
+ }
+.information__container {
+    @include FormularyBox;
+} 
+
+.message__information {
+    height: 105px;
+    padding-left: 15px;
+}
+
+.submit__button {
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  background-color:$colorPrimary-700;
+  color: $colorSecundary-0;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-bottom: 60px;
+}
+.data__container {
+    padding-left: 15px;
+    padding-right: 15px;
+}

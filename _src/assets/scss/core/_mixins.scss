@@ -1,5 +1,19 @@
+
 @mixin flexCentered {
     display: flex;
     justify-content: center;
     align-items: center;
+} 
+
+@mixin FormularyBox {
+    height: 45px;
+    padding-left: 15px;
+    
+}
+
+@mixin dataBox {
+    height: 19px;
+ 
+    margin-bottom: 7px;
+    font-size: 14px;
 }
