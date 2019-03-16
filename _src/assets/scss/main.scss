@@ -5,6 +5,7 @@
 
 
 // Layout
+@import 'layout/body';
 @import 'layout/header';
 @import 'layout/team';
 @import 'layout/about-us';
@@ -38,7 +39,7 @@ html{
 
 body {
     /* font-size: 14px; */
-    font-family: 'open sans';
+    font-family: $fontPrimary;
 
     color: $colorSecundary-700;
     background-color: $colorSecundary-0;
@@ -81,7 +82,7 @@ body {
         font-size: 1.143rem;
         font-weight: 500;
         color: $colorSecundary-0;
-        font-family: 'Rubik', sans-serif;
+        font-family: $fontSecundary;
         font-weight: 500;
     }
 
@@ -106,7 +107,7 @@ body {
         font-size: 1.071rem;
         font-weight: 500;
         color: $colorSecundary-0;
-        font-family: 'Rubik', sans-serif;
+        font-family: $fontSecundary;
     }
 
     .main-claim-big-container{
@@ -127,7 +128,7 @@ body {
         line-height: 25px;
         font-weight: 600;
         color: $colorSecundary-1000;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $fontPrimary;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -235,21 +236,19 @@ body {
     }
 
     .section__primary-title { 
-        font-family: "rubik",sans-serif;
+        font-family: $fontSecundary;
         color: $colorPrimary-400;
         text-align: center;
         text-transform: uppercase;
-        font-family: "rubik",sans-serif;
+        font-family: $fontSecundary;
         margin: 0 0 15px 0;
     }
 
     .section__secundary-title {
         color: $colorPrimary-700;
-        font-family: "rubik",sans-serif;
+        font-family: $fontSecundary;
         height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCentered();
     }
 
     .description-team {
@@ -282,9 +281,7 @@ body {
     color:$colorSecundary-1000;
     font-weight: 400;
     height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCentered();
 }
 
 .card__profile-photo {
@@ -292,9 +289,7 @@ body {
     height: 180px;
     background-color: $colorSecundary-0;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCentered();
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -332,9 +327,7 @@ body {
 .social-media__item{
     height: 100%; 
     color: #099d8d; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCentered();
     margin: 0 auto;
     }
 
@@ -574,7 +567,7 @@ a {
     .main-footer__copyright {
         margin-top: 100px;
         color: #b8b8b9;
-        font-family: "Open Sans", sans-serif;
+        font-family: $fontPrimary;
         font-size: 1rem; 
     }
 
@@ -582,7 +575,7 @@ a {
         padding-top: 20px;
         padding-bottom: 30px;
         color: $colorSecundary-700;
-        font-family: "Open Sans", sans-serif;
+        font-family: $fontPrimary;
         font-weight: 600;
         font-size: 1rem;
     
