@@ -3,3 +3,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin positionDecorativeItem {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -15px) rotate(45deg);
+}
