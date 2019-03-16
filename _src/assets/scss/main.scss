@@ -222,18 +222,20 @@ body {
 
 
 /* MAIN - first section */
-    .padding-section {
+    .container {
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 30px;
         padding-top: 50px;
     }
 
-    .bgcolor {
+
+    .container--bgcolor {
         background-color: $colorSecundary-400;
     }
 
-    .title-section { 
+    .section__primary-title { 
+        font-family: "rubik",sans-serif;
         color: $colorPrimary-400;
         text-align: center;
         text-transform: uppercase;
@@ -241,9 +243,9 @@ body {
         margin: 0 0 15px 0;
     }
 
-    .title-list-description {
+    .section__secundary-title {
         color: $colorPrimary-700;
-
+        font-family: "rubik",sans-serif;
         height: 45px;
         display: flex;
         justify-content: center;
@@ -251,26 +253,22 @@ body {
     }
 
     .description-team {
-        list-style-type: none;
+        list-style: none;
         text-align: center;
-
         padding-left: 0px;
         padding-bottom: 15px; 
     }
 
-    .title-type {
-        font-family: "rubik",sans-serif;
-    }
+
 
     #weakness {
         margin-top: 30px;
     }
 
-    .triangle {
+    .container__divider {
         margin: auto;
         width: 30px;
         height: 30px;
-
         background-color: $colorSecundary-0;
         z-index: 10;
         position: absolute;
@@ -312,6 +310,9 @@ body {
     border: 5px solid $colorSecundary-400;
 }
 
+.card__description {
+   font-size: 1.143rem;
+}
 
 /* social media items*/
 .card__social-media{
@@ -371,7 +372,7 @@ a {
 
 /* About us section responsive - tablet */
 @media all and (min-width:768px){
-    .padding-section {
+    .container {
         padding-left: 45px;
         padding-right: 45px;
         padding-bottom: 60px;
@@ -379,16 +380,16 @@ a {
         /*revisar padding-top*/
     }
 
-    .padding-section.bgcolor{
+    .container--bgcolor{
         padding-top: 45px;
     }
 
-    .description{
+    .section__description{
         font-size: 1.143rem;
         margin-top: 15px;
     }
 
-    .title-list-description {
+    .section__secundary-title {
         font-size: 1.571rem;
     }
     
@@ -406,7 +407,7 @@ a {
         width: 324px;
     }
 
-    .title-type {
+    .section__primary-title{
         font-size: 1.714rem;
     }
     
@@ -491,7 +492,7 @@ a {
 
 /* about us section responsive - desktop */
 @media all and (min-width:1200px){
-    .padding-section {
+    .container {
         margin: auto;
     }
 
@@ -500,7 +501,7 @@ a {
         margin:0 auto;
     }
 
-    .padding-section.bgcolor{
+    .container--bgcolor{
         max-width: none;
     }
    
@@ -549,6 +550,7 @@ a {
 
         .card__description {
             width: 440px;
+
         }
         #last-member {
             padding-bottom: 0;
