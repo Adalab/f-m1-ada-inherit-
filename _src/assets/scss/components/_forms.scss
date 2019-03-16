@@ -57,3 +57,23 @@ body {
 .information__container {
     @include FormularyBox;
 } 
+
+.message__information {
+    height: 105px;
+    padding-left: 15px;
+}
+
+.submit__button {
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  background-color:$colorPrimary-700;
+  color: $colorSecundary-0;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-bottom: 60px;
+}
+.data__container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
