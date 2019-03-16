@@ -209,17 +209,18 @@ body {
         background-color: rgba(184,184,185,0.2);
     }
 
-    .title-section { 
-        color: aqua;
+    .section__primary-title { 
+        font-family: "rubik",sans-serif;
+        color: #099d8d;
         text-align: center;
         text-transform: uppercase;
         font-family: "rubik",sans-serif;
         margin: 0 0 15px 0;
     }
 
-    .title-list-description {
+    .section__secundary-title {
         color: #099d8d;
-
+        font-family: "rubik",sans-serif;
         height: 45px;
         display: flex;
         justify-content: center;
@@ -229,14 +230,11 @@ body {
     .description-team {
         list-style-type: none;
         text-align: center;
-
         padding-left: 0px;
         padding-bottom: 15px; 
     }
 
-    .title-type {
-        font-family: "rubik",sans-serif;
-    }
+
 
     #weakness {
         margin-top: 30px;
@@ -288,6 +286,9 @@ body {
     border: 5px solid rgba(0, 0, 0, 0.08);
 }
 
+.card__description {
+   font-size: 1.143rem;
+}
 
 /* social media items*/
 .card__social-media{
@@ -347,7 +348,7 @@ a {
 
 /* About us section responsive - tablet */
 @media all and (min-width:768px){
-    .padding-section {
+    .container {
         padding-left: 45px;
         padding-right: 45px;
         padding-bottom: 60px;
@@ -355,16 +356,16 @@ a {
         /*revisar padding-top*/
     }
 
-    .padding-section.bgcolor{
+    .container--bgcolor{
         padding-top: 45px;
     }
 
-    .description{
+    .section__description{
         font-size: 1.143rem;
         margin-top: 15px;
     }
 
-    .title-list-description {
+    .section__secundary-title {
         font-size: 1.571rem;
     }
     
@@ -382,7 +383,7 @@ a {
         width: 324px;
     }
 
-    .title-type {
+    .section__primary-title{
         font-size: 1.714rem;
     }
     
@@ -467,7 +468,7 @@ a {
 
 /* about us section responsive - desktop */
 @media all and (min-width:1200px){
-    .padding-section {
+    .container {
         margin: auto;
     }
 
@@ -476,7 +477,7 @@ a {
         margin:0 auto;
     }
 
-    .padding-section.bgcolor{
+    .container--bgcolor{
         max-width: none;
     }
    
@@ -525,6 +526,7 @@ a {
 
         .card__description {
             width: 440px;
+
         }
         #last-member {
             padding-bottom: 0;
