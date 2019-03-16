@@ -1,0 +1,125 @@
+/* MAIN - first section */
+.padding-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.bgcolor {
+    background-color: $colorSecundary-400;
+}
+
+.title-section { 
+    color: $colorPrimary-400;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fontSecundary;
+    margin: 0 0 15px 0;
+}
+
+.description{
+    text-align: center;
+}
+
+.title-list-description {
+    color: $colorPrimary-700;
+
+    height: 45px;
+    @include flexCentered();
+}
+
+.description-team {
+    list-style-type: none;
+    text-align: center;
+
+    padding-left: 0px;
+    padding-bottom: 15px; 
+}
+
+.title-type {
+    font-family: $fontSecundary;
+}
+
+#weakness {
+    margin-top: 30px;
+}
+
+.triangle {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+
+    background-color: $colorSecundary-0;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -15px) rotate(45deg);
+}
+/* Team section responsive - tablet */
+@media all and (min-width:768px){
+    .padding-section {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 60px;
+        padding-top: 45px;
+        /*revisar padding-top*/
+    }
+
+    .padding-section.bgcolor{
+        padding-top: 45px;
+    }
+
+    .description{
+        font-size: 1.143rem;
+        margin-top: 15px;
+    }
+
+    .title-list-description {
+        font-size: 1.571rem;
+    }
+    
+    .description-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom: 0px;
+    }
+
+    .about-us-paragraph{
+        font-size: 1.147rem;
+        width: 324px;
+    }
+
+    .title-type {
+        font-size: 1.714rem;
+    }
+    
+    #weakness {
+        margin-top: 0px;
+    }
+}
+
+/* team section responsive - desktop */
+@media all and (min-width:1200px){
+    .padding-section {
+        margin: auto;
+    }
+
+    .desktop-width{
+        max-width: 601px;
+        margin:0 auto;
+    }
+
+    .padding-section.bgcolor{
+        max-width: none;
+    }
+   
+    .about-us-paragraph{
+        width: 439px;
+    }
+
+
+}

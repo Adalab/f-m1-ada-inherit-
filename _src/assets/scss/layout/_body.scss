@@ -1,0 +1,20 @@
+/* General common rules */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    /* Aux border */
+    /* border: 0.1px solid pink; */
+}
+
+html{
+    font-size: 14px;
+}
+
+body {
+    /* font-size: 14px; */
+    font-family: $fontPrimary;
+    color: $colorSecundary-700;
+    background-color: $colorSecundary-0;
+}
