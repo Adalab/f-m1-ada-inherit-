@@ -1,12 +1,26 @@
+
 @mixin flexCentered {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin positionDecorativeItem {
+@mixin positionDecorativeIcon {
     z-index: 10;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -15px) rotate(45deg);
+} 
+
+@mixin FormularyBox {
+    height: 45px;
+    padding-left: 15px;
+    
+}
+
+@mixin dataBox {
+    height: 19px;
+ 
+    margin-bottom: 7px;
+    font-size: 14px;
 }
