@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+}
+
 .main-claim-big-container {
     display: none;
 }
@@ -33,3 +37,23 @@
      align-items: center;
      margin: auto;
  }
+
+ .marker {
+     color: $colorPrimary-400;
+ }
+
+
+ .data__item {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-bottom: 13px;
+
+     .information {
+         @include dataBox;     
+     }
+
+ }
+.information__container {
+    @include FormularyBox;
+} 
