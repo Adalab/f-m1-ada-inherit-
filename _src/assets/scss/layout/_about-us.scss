@@ -1,57 +1,192 @@
   /* MAIN - second section */
-  .card__title {
-    font-size: 20px;
-    color:$colorSecundary-1000;
-    font-weight: 400;
-    height: 45px;
-    @include flexCentered();
-}
 
-.card__profile-photo {
-    width: 180px;
-    height: 180px;
-    background-color: $colorSecundary-0;
-    position: relative;
-    @include flexCentered();
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
 
-.card__profile-photo img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  /* Cards*/
+
+.card {
+    @media all and (min-width:768px) {
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        padding:30px 0 30px 0;
+    }
+
+    @media all and (min-width:1200px) {
+        height: 338px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding:30px 0 30px 0;
+        max-width: 924px;
+        margin: 0 auto;
+    }
+
     
-    border-radius: 4px;
-    border: 5px solid $colorSecundary-400;
+    .card__title {
+        font-size: 20px;
+        color:$colorSecundary-1000;
+        font-weight: 400;
+        height: 45px;
+        @include flexCentered();
+
+            @media all and (min-width:768px) {
+                margin: 0;
+                width: 442px;
+                padding: 0;
+                justify-content:flex-start;
+            }
+    }
+
+    .card__profile-photo {
+        width: 180px;
+        height: 180px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;  
+     
+        @media all and (min-width:768px) {
+            padding: 0px;
+            width: 205px; 
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0 30px 0 0;
+        }
+
+        @media all and (min-width:1200px) {
+            padding: 0px;
+            width: 278px; 
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0 45px 0 0;
+        }
+
+        img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            border-radius: 4px;
+            border: 5px solid $colorSecundary-400;
+        
+            @media all and (min-width:768px) {
+                width: 205px;
+            }
+
+            @media all and (min-width:1200px) {
+                width: 278px;
+            }
+        }
+    }
+
+
+    .card__description {
+        font-size: 1.143rem;
+        text-align: center;
+
+        @media all and (min-width:768px) {
+            text-align: left;
+            width: 412px;
+        }
+
+        @media all and (min-width:1200px) {
+            width: 440px;
+            
+        }
+    }
+
+    .card__social-media {
+        height: 30px;
+        width: 124px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding:0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+
+        @media all and (min-width:768px) {
+            display: flex;
+            justify-content: flex-start;
+            margin:0;
+        }
+    }
+
 }
 
-.card__description {
-    font-size: 1.143rem;
+.card--odd {
+        @media all and (min-width:768px) {
+            align-items: flex-start;
+        }
 }
+
+.card--even {
+    @media all and (min-width:768px) {
+        align-items: flex-end;
+
+        .card__profile-photo {
+            order:1;
+            justify-content:flex-end;
+            margin: 0 0 0 30px;
+        }
+
+        .card__title {
+            justify-content: flex-end;
+        }
+
+        .card__description {
+            text-align: right;
+            display: flex;
+        }
+
+        .social-media {
+            display:flex;
+            justify-content: flex-end;
+        }
+    }
+
+    @media all and (min-width:1200px) {
+        align-content: flex-end;
+
+        .card__profile-photo{
+            order:1;
+            justify-content:flex-end;
+            margin: 0 0 0 45px;
+        }
+    
+    }
+}
+
 
 /* social media items*/
-.card__social-media{
-    height: 30px;
-    width: 124px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding:0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-}
+
 
 .social-media__item{
     height: 100%; 
     color: #099d8d; 
     @include flexCentered();
     margin: 0 auto;
+}
+
+.social-media__link {
+    color: #099d8d;
 }
 
 .social-media__link:hover{
@@ -65,9 +200,7 @@
     width: 2px;
     height: 2px;
 }
-.social-media__link {
-    color: #099d8d;
-}
+
 a {
     text-decoration: none;
 }
@@ -79,140 +212,27 @@ a {
     margin-bottom: 6px;
 }
 
+    
+#title-us {
+    @media all and (min-width:1200px){
+            margin-bottom: 11px;
+    }
+}
+
+#last-member {
+    @media all and (min-width:768px){
+        padding-bottom: 0;
+        height: 235px;
+    }
+    @media all and (min-width:1200px){
+        padding-bottom: 0;
+        height: 308px;
+    }
+}
+
 /*en version web
 
 .social-media__link:hover {
     background-color: #099d8d;
     color: $colorSecundary-0;     
-    
-    /*second section - team */
-    
-    @media all and (min-width:768px){
-        .card {
-            height: 265px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: center;
-            padding:30px 0 30px 0;
-        }
-        .card--odd{
-            align-items: flex-start;
-        }
-        
-        .card--even{
-            align-items: flex-end;
-        }
-        
-        .card__profile-photo {
-            padding: 0px;
-            width: 205px; 
-            height: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin: 0 30px 0 0;
-        }
-        
-        .card__profile-photo img{
-            width: 205px;
-        }
-        .card__title {
-            margin: 0;
-            width: 442px;
-            padding: 0;
-            justify-content:flex-start;
-        }
-        
-        .card__social-media {
-            display: flex;
-            justify-content: flex-start;
-            margin:0;
-        }
-        
-        .card__description {
-            text-align: left;
-            width: 412px;
-        }
-        
-        
-        
-        .card--even .card__profile-photo{
-            order:1;
-            justify-content:flex-end;
-            margin: 0 0 0 30px;
-        }
-        
-        .card--even .card__title{
-            justify-content: flex-end;
-        }
-        
-        .card--even .card__description{
-            text-align: right;
-            display: flex;
-        }
-        
-        .card--even .social-media{
-            display:flex;
-            justify-content: flex-end;
-        }
-        #last-member {
-            padding-bottom: 0;
-            height: 235px;
-        }
-    }
-    
-    @media all and (min-width:1200px){
-        /*second section - team */
-        #title-us {
-            margin-bottom: 11px;
-        }
-        
-        .card {
-            height: 338px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            padding:30px 0 30px 0;
-            max-width: 924px;
-            margin: 0 auto;
-        }
-        
-        .card__profile-photo {
-            padding: 0px;
-            width: 278px; 
-            height: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin: 0 45px 0 0;
-        }
-        
-        .card__profile-photo img{
-            width: 278px;
-        }
-        .card--even {
-            align-content: flex-end;
-        }
-        .card--even .card__profile-photo{
-            order:1;
-            justify-content:flex-end;
-            margin: 0 0 0 45px;
-        }
-        
-        .card__description {
-            width: 440px;
-            
-        }
-        #last-member {
-            padding-bottom: 0;
-            height: 308px;
-        }
-    }
-    
-    
-    
-    
+ 
