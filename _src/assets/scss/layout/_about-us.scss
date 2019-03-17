@@ -45,11 +45,9 @@
     .card__profile-photo {
         width: 180px;
         height: 180px;
-        background-color: white;
+        background-color: $colorSecundary-0;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCentered();       
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -180,13 +178,13 @@
 
 .social-media__item{
     height: 100%; 
-    color: #099d8d; 
+    color: $colorPrimary-700; 
     @include flexCentered();
     margin: 0 auto;
 }
 
 .social-media__link {
-    color: #099d8d;
+    color: $colorPrimary-700;
 }
 
 .social-media__link:hover{
@@ -194,9 +192,9 @@
 }
 
 .dot {
-    background-color:#099d8d; 
+    background-color:$colorPrimary-700; 
     border-radius: 50%;
-    color:#099d8d;
+    color:$colorPrimary-700;
     width: 2px;
     height: 2px;
 }
