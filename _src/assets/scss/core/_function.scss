@@ -1,7 +1,7 @@
 
 // CARMEN:
-// Function for convert fontsize from pixels to rem
+// Function to input pixels and return rems
 
-// @function rem(pixels) {
-//     @return ( $pixels / $defaultFontSize * 1rem );
-// }
+@function rem($pixels) {
+    @return ( $pixels * 1rem / $defaultFontSize );
+}

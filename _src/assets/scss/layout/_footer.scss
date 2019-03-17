@@ -40,7 +40,10 @@
     margin-top: 100px;
     color: #b8b8b9;
     font-family: $fontPrimary;
-    font-size: 1rem; 
+    font-size: rem(14); 
+    // font-size: 1rem; 
+    // font-size: 14px; 
+
 
     @media all and (min-width:768px) {
         width: 172px;
@@ -64,7 +67,9 @@
     color: $colorSecundary-700;
     font-family: $fontPrimary;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: rem(14); 
+    // font-size: 1rem; 
+    // font-size: 14px; 
     
     opacity: 0.75;
     text-transform: uppercase;
@@ -75,12 +80,16 @@
     
 
     @media all and (min-width:768px) {
+        padding: 0;
         width: 324px;
         height: 90px;
+
         text-align: end;
         line-height: 30px;
-        font-size: 1rem;
-        padding: 0;
+        font-size: rem(14); 
+        // font-size: 1rem; 
+        // font-size: 14px; 
+
     }
 
     @media all and (min-width:1200px) {
