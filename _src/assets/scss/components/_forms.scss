@@ -2,9 +2,6 @@ body {
     width: 100%;
 }
 
-.main-claim-big-container__hidden {
-    display: none;
-}
 
 .contact__description {
     text-align: center;
@@ -55,10 +52,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     @media all and (min-width:768px) {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-         grid-template-rows: 1fr 1fr 1fr 1fr;
-         grid-column-gap: 44px;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         
        
     }
     
@@ -67,24 +65,35 @@ body {
  .data__item1 {
      @include dataItem;
      @media all and (min-width:768px) {
-        grid-column: 1/4;
+         width: 601px;
      }
-
-     
+         
  }
  .data__item2 {
     @include dataItem;
-    grid-column: 1/3;
+    @media all and (min-width:768px) {
+        width: 395px;
+        margin-right: 44px;
+    }
+    
+
     
 }
 .data__item3 {
     @include dataItem;
+    @media all and (min-width:768px) {
+        width: 162px;
+        
+    }
+   
     
 }
 .data__item4 {
     @include dataItem;
-    grid-column: 1/4;
-    
+    @media all and (min-width:768px) {
+        width: $widthFormularyTablet;
+    }
+
 }
 
 
