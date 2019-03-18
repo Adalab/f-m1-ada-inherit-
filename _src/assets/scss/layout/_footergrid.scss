@@ -85,9 +85,7 @@
 
         @media all and (min-width:768px) {
             grid-row: span 2;
-            display: flex;
-            justify-content: flex-end;
-            display: block;
+           
         }
 
     }
@@ -146,4 +144,12 @@
 
 .link-footer{
     text-decoration: inherit;
+}
+
+.item-footer{
+    @media all and (min-width:768px) {
+    display: flex;
+    justify-content: flex-end;
+    display: block;
+    }
 }
