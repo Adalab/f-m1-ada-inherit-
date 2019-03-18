@@ -52,6 +52,17 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     @media all and (min-width:768px) {
+        width: 442px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      
+
+    }
+
+
+
+    @media all and (min-width:1200px) {
          display: flex;
          flex-direction: row;
          flex-wrap: wrap;
@@ -64,14 +75,14 @@ body {
 
  .data__item1 {
      @include dataItem;
-     @media all and (min-width:768px) {
+     @media all and (min-width:1200px) {
          width: 601px;
      }
          
  }
  .data__item2 {
     @include dataItem;
-    @media all and (min-width:768px) {
+    @media all and (min-width:1200px) {
         width: 395px;
         margin-right: 44px;
     }
@@ -81,7 +92,7 @@ body {
 }
 .data__item3 {
     @include dataItem;
-    @media all and (min-width:768px) {
+    @media all and (min-width:1200px) {
         width: 162px;
         
     }
@@ -90,8 +101,8 @@ body {
 }
 .data__item4 {
     @include dataItem;
-    @media all and (min-width:768px) {
-        width: $widthFormularyTablet;
+    @media all and (min-width:1200px) {
+       
     }
 
 }
@@ -123,4 +134,9 @@ body {
   text-transform: uppercase;
   margin-top: 17px;
   margin-bottom: 60px;
+
+  @media all and (min-width:768px) {
+      width: 206px;
+      align-self: flex-end;
+  }
 }
