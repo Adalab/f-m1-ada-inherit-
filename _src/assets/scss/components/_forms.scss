@@ -2,14 +2,14 @@ body {
     width: 100%;
 }
 
-.main-claim-container__hidden {
+.main-claim-big-container__hidden {
     display: none;
 }
 
 .contact__description {
     text-align: center;
     margin-bottom: 58px;
-}
+} 
 
 
 .contact__title {
@@ -19,6 +19,10 @@ body {
         text-transform: uppercase;
         margin-top: 30px;
         margin-bottom: 15px;
+        @media all and (min-width:768px) {
+            margin-top: 45px;
+        }
+    
 }
 
 
@@ -36,6 +40,11 @@ body {
      justify-content: space-between;
      align-items: center;
      margin: auto;
+     @media all and (min-width:768px) {
+         width: 601px;
+         height: 150px;
+         line-height: 1.5;
+     }
  }
 
  .marker {
