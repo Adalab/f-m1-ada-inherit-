@@ -23,3 +23,10 @@
     margin-bottom: 7px;
     font-size: 14px;
 }
+
+@mixin dataItem { display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    
+}
