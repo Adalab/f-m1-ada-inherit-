@@ -1,0 +1,6 @@
+// CARMEN:
+// Function to input pixels and return rems
+
+@function rem($pixels) {
+    @return ( $pixels * 1rem / $defaultFontSize );
+}
