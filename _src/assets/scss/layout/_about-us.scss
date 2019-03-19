@@ -5,7 +5,16 @@
 #anchoring-about-us {
     position: relative;
     top: -130px;
+
+    @media all and (min-width:768px){
+        top: -100px;
+    }
+
+    @media all and (min-width:1200px){
+        top: -100px;
+    }
 }
+
 
 /* Cards*/
 .card {
