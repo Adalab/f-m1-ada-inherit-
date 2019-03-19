@@ -15,12 +15,22 @@
 @mixin FormularyBox {
     height: 45px;
     padding-left: 15px;
+    border: 1px solid #b8b8b9;
     
 }
 
 @mixin dataBox {
     height: 19px;
- 
     margin-bottom: 7px;
     font-size: 14px;
+   
+}
+
+@mixin dataItem { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 13px;
+   
+    
 }
