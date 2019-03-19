@@ -10,6 +10,11 @@
     }
 }
 
+// To visually "push down" the content of the sections I have created new anchoring elements (empty divs) that are positioned relative, so they can move up the amount of the header from their initial position and so avoid header  overlapping! 
+#anchoring-team {
+    position: relative;
+    top: -130px;
+}
 
 .container--bgcolor {
     background-color: $colorSecundary-400;
