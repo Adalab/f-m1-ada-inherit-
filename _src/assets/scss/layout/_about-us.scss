@@ -185,7 +185,7 @@
 
 .social-media__link {
     color: $colorPrimary-700;
-    transition: color ease 1s;
+    transition: color ease 200ms;
         &:hover {
           color: #055850;;
         }
