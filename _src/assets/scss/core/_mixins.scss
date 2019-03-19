@@ -24,7 +24,8 @@
     font-size: 14px;
 }
 
-@mixin dataItem { display: flex;
+@mixin dataItem { 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 13px;
