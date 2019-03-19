@@ -13,26 +13,45 @@
     
     background-size: cover;
     position: relative;
+    @media all and (min-width:1200px){
+        height: 550px;
+    }
 }
 
 .main-title-container{
     background-color: rgba(9, 157, 141, 0.95);
     height: 60px;
+    @media all and (min-width:768px) {
+        height:100%;
+        background-color: transparent;
+
+    }
 }
 .main-title-menu-container {
     position: fixed;
     width: 100%;
     z-index: 20;
+    @media all and (min-width:768px) {
+        height: 60px;
+        display:flex;
+        background-color: rgba(9, 157, 141,0.95);
+        justify-content: space-between;
+        padding:0 45px;
+
+    }
+    @media all and (min-width:1200px){
+        padding-left: 142px;
+        padding-right: 142px;
+    }
 }
 
 .main-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+    @include flexCentered();
     height: 100%;
     text-align: center;
     margin: 0;
-    font-size: 1.143rem;
+    font-size: rem(16);
     font-weight: 500;
     color: $colorSecundary-0;
     font-family: $fontSecundary;
@@ -42,6 +61,11 @@
 .main-menu{
     height: 45px;
     background-color: rgba(19, 214, 195, 0.95);
+    @media all and (min-width:768px) {
+        background-color:transparent;
+        height:100%;
+
+    }
 }
 
 .main-menu-list{
@@ -52,123 +76,91 @@
     align-items: center;
     height: 100%;
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding:0px 20px;
+    @media all and (min-width:768px) {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0px;
+
+    }
+   
 }
 
 .main-menu-item{
-    font-size: 1.071rem;
+    font-size: rem(15);
     font-weight: 500;
     color: $colorSecundary-0;
     font-family: $fontSecundary;
+    @media all and (min-width:768px) {
+        margin-left: 20px;
+
+    }
+}
+.main-menu-item-link{
+    color:$colorSecundary-0;
+
 }
 
 .main-claim-big-container{
     width: 100%;
     background-color: transparent;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     position: absolute;
     bottom:-40px;
+    @media all and (min-width:768px) {
+        width: auto;
+        bottom:0px;
+        height: 80px;
+
+    }
+}
+.main-claim-big-container-hidden{
+    visibility: hidden;
 }
 
 .main-claim-container{
     height:80px;
     background-color: $colorSecundary-0;
+    @media all and (min-width:768px) {
+        opacity: 0.8;
+        padding:15px 30px;
+    
+        margin-left: 46px;
+
+    }
+    @media all and (min-width:1200px) {
+        opacity: 0.8;
+        padding: 15px 30px;
+        margin-left: 138px;
+
+    }
 }
 
 .main-claim{
-    font-size: 1.2rem;
+    font-size: rem(18);
     line-height: 25px;
     font-weight: 600;
     color: $colorSecundary-1000;
     font-family: $fontPrimary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCentered();
     height: 100%;
     text-align: center;
-}
-
-/* HEADER RESPONSIVE */
-
-@media all and (min-width:768px) 
-{
-    .main-title-menu-container{
-        height: 60px;
-        display:flex;
-        background-color: rgba(9, 157, 141,0.95);
-        justify-content: space-between;
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-    
-    .main-title-container{
-        height:100%;
-        background-color: transparent;
-    }      
-    
-    .main-menu{
-        background-color:transparent;
-        height:100%;
-    }      
-    
-    .main-menu-list{
-        display: flex;
-        justify-content: flex-end;
-        padding-left: 0px;
-        padding-right: 0px;
-    }    
-    
-    .main-menu-item{
-        margin-left: 20px;
-    }
-    
-    .main-claim-big-container{
-        width: auto;
-        bottom:0px;
-        height: 80px;
-    }
-    
-    .main-claim-container{
-        
-        opacity: 0.8;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 15px;
-        padding-bottom:15px;
-        margin-left: 46px;
-    }
-    
-    .main-claim{
+    @media all and (min-width:768px) {
         padding-top:0px;
         padding-bottom:0px;
         text-align: left;
-    }      
-}
 
-@media all and (min-width:1200px) {
-    .main-title-menu-container{
-        padding-left: 142px;
-        padding-right: 142px;
     }
-    
-    .main-claim-container{
-        opacity: 0.8;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 15px;
-        padding-bottom:15px;
-        margin-left: 138px;
-    }
-    .main-claim{
-        font-size: 1.714rem;
+    @media all and (min-width:1200px) {
+        font-size: rem(24);
     }
 }
 
-/* HEADER DESKTOP VERSION */
-@media all and (min-width:1200px) {
-    .main-header{  
-        height: 550px;
-    }
-}
+
+
+
+
+
+
+
 
