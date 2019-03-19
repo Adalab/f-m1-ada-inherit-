@@ -185,11 +185,12 @@
 
 .social-media__link {
     color: $colorPrimary-700;
+    transition: color ease 1s;
+        &:hover {
+          color: #055850;;
+        }
 }
 
-.social-media__link:hover{
-    color: #055850;
-}
 
 .dot {
     background-color:$colorPrimary-700; 
