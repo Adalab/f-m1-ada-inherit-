@@ -1,7 +1,7 @@
  .data__container {
     padding-left: 15px;
     padding-right: 15px;
-    
+
     @media all and (min-width:768px) {
         width: 442px;
         display: flex;
@@ -9,6 +9,7 @@
         margin: auto;
         padding: 0;
     }
+
     @media all and (min-width:1200px) {
         width: 620px;
         padding: 10px;
@@ -26,7 +27,7 @@
     }       
  }
 
- .data__item2 {
+.data__item2 {
     @include dataItem;
     @media all and (min-width:1200px) {
         flex-grow: 2;
@@ -34,12 +35,14 @@
         padding-left: 0;  
     }   
 }
+
 .data__item3 {
     @include dataItem;
     @media all and (min-width:1200px) {
         width: 162px;   
     }  
 }
+
 .data__item4 {
     @include dataItem;
     @media all and (min-width:1200px) {
