@@ -19,7 +19,8 @@
 }
 
 .main-title-container{
-    background-color: rgba(9, 157, 141, 0.95);
+    // background-color: rgba(9, 157, 141, 0.95);
+    background-color:rgba($colorPrimary-700,0.95);
     height: 60px;
     @media all and (min-width:768px) {
         height:100%;
@@ -34,7 +35,8 @@
     @media all and (min-width:768px) {
         height: 60px;
         display:flex;
-        background-color: rgba(9, 157, 141,0.95);
+        background-color:rgba($colorPrimary-700,0.95);
+        // background-color:red;
         justify-content: space-between;
         padding:0 45px;
 
