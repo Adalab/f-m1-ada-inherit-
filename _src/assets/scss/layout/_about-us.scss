@@ -195,6 +195,7 @@
     color: $colorPrimary-700; 
     @include flexCentered();
     margin: 0 auto;
+    position: relative;
 }
 
 .social-media__link {
@@ -206,13 +207,19 @@
 }
 
 
-.dot {
+.social-media__item:not(:first-child)::before{
+    content: "";
     background-color:$colorPrimary-700; 
     border-radius: 50%;
     color:$colorPrimary-700;
     width: 2px;
     height: 2px;
-}
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    }
+   
 
 a {
     text-decoration: none;
