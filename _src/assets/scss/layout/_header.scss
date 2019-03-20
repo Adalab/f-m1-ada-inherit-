@@ -91,9 +91,25 @@
     font-weight: 500;
     color: $colorSecundary-0;
     font-family: $fontSecundary;
+
     @media all and (min-width:768px) {
         margin-left: 20px;
+    }
 
+    // Trick to align the nav links!
+    @media all and (max-width:768px){
+        width: 80px;
+        text-align: center;
+
+        .item1{
+            text-align: left;
+        }
+        .item2{
+            text-align: center;
+        }
+        .item3{
+            text-align: right;
+        }
     }
 }
 .main-menu-item-link{
