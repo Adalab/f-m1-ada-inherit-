@@ -36,7 +36,6 @@
         height: 60px;
         display:flex;
         background-color:rgba($colorPrimary-700,0.95);
-        // background-color:red;
         justify-content: space-between;
         padding:0 45px;
 
@@ -90,9 +89,10 @@
 
 .main-menu-item{
     font-size: rem(15);
-    font-weight: 500;
+ 
     color: $colorSecundary-0;
     font-family: $fontSecundary;
+
     @media all and (min-width:768px) {
         margin-left: 20px;
 
@@ -100,6 +100,12 @@
 }
 .main-menu-item-link{
     color:$colorSecundary-0;
+    font-weight: 500;
+    transition:font-weight ease 200ms;
+    &:hover{
+        font-weight: 700;
+    }
+    
 
 }
 
