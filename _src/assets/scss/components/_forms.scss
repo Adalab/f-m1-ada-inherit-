@@ -9,7 +9,7 @@ body {
 } 
 
 .contact__title {
-        color: #099d8d;
+        color: $colorPrimary-700;
         font-weight: 500;
         font-family: $fontSecundary;
         text-transform: uppercase;
@@ -35,8 +35,12 @@ body {
      align-items: center;
      margin: auto;
      @media all and (min-width:768px) {
+         width: 442px;
+         height: 170px;
+     }
+     @media all and (min-width:1200px) {
          width: 601px;
-         height: 150px;
+         height: 130px;
          line-height: 1.5;
      }
  }
