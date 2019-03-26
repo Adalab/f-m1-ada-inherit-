@@ -18,6 +18,15 @@
     }
 }
 
+.contact-header {
+    height: 300px;
+    background: url("../images/hero-contact.jpg") center;
+    background-size: cover;
+    @media all and (min-width:1200px) {
+        height: 400px;
+    }
+}
+
 .main-title-container{
     // background-color: rgba(9, 157, 141, 0.95);
     background-color:rgba($colorPrimary-700,0.95);
